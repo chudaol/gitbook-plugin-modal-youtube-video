@@ -17,7 +17,7 @@ Add plugin to your `book.json`, then run `gitbook install`:
 }
 ```
 
-Add youtube video source and a label for the link
+Add youtube video source and a label for the link after the space
 
 ```
 
@@ -25,3 +25,14 @@ Add youtube video source and a label for the link
 ```
 
 The video will be replace by the link with given label which opens a modal when clicked.
+
+### Add custom html code to appear in the modal header
+
+It is also possible to add some custom html code which will appear in the modal's header. Imagine, you'd like some link to appear there.
+Use pipe to separate youtube link from label and from your custom html header code:
+
+{% modalYoutube %}http://www.youtube.com/v/9bZkp7q19f0|Look at this video!|<a href="#">This is my custom header link!</a>{% endmodalYoutube %}
+
+Your custom header will appear on the left of close button:
+
+![Video](screenshot3.png)

@@ -19,6 +19,12 @@
   background-color: #fff;
   box-shadow: 0 2px 1px rgba(34, 25, 25, 0.1);
 }
+.modal .modal_header {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 .modal .close {
   display: block;
   position: absolute;
