@@ -31,8 +31,10 @@ The video will be replace by the link with given label which opens a modal when 
 It is also possible to add some custom html code which will appear in the modal's header. Imagine, you'd like some link to appear there.
 Use pipe to separate youtube link from label and from your custom html header code:
 
-{% modalYoutube %}http://www.youtube.com/v/9bZkp7q19f0|Look at this video!|<a href="#">This is my custom header link!</a>{% endmodalYoutube %}
+```
 
+{% modalYoutube %}http://www.youtube.com/v/9bZkp7q19f0|Look at this video!|<a href="#">This is my custom header link!</a>{% endmodalYoutube %}
+```
 Your custom header will appear on the left of close button:
 
 ![Video](screenshot3.png)
