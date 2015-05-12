@@ -28,7 +28,7 @@ require(["jquery"], function($) {
     ev.stopPropagation();
     ev.preventDefault();
     $(".modal").slideUp();
-    $(this).parent().next().slideDown();
+    $(this).parent().find(".modal").first().slideDown();
   });
   /**
    * Closes modals on click on close button
