@@ -25,10 +25,16 @@ require(["jquery"], function($) {
    * Open modal on click on play button
    */
   $(".button.play").click(function (ev) {
+    var $modal;
+
     ev.stopPropagation();
     ev.preventDefault();
     $(".modal").slideUp();
-    $(this).parent().find(".modal").first().slideDown();
+    $modal = $(this).parent().next();
+    if (!$modal.hasClass("modal modal_video")) {
+      $modal = $(this).parent().find(".modal").first();
+    }
+    $modal.slideDown();
   });
   /**
    * Closes modals on click on close button
