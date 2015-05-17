@@ -30,10 +30,7 @@ require(["jquery"], function($) {
     ev.stopPropagation();
     ev.preventDefault();
     $(".modal").slideUp();
-    $modal = $(this).parent().next();
-    if (!$modal.hasClass("modal modal_video")) {
-      $modal = $(this).parent().find(".modal").first();
-    }
+    $modal = $(this).closest(".modal_parent").children(".modal");
     $modal.slideDown();
   });
   /**

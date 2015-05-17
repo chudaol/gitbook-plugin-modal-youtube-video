@@ -73,7 +73,7 @@ module.exports = {
         "</div>" +
         "</div>";
 
-        return buttonHTML + modalHTML;
+        return "<div class=\"modal_parent\">" + buttonHTML + modalHTML + "</div>";
       }
     }
   }
