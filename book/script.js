@@ -1,4 +1,4 @@
-require(["jquery"], function($) {
+require(["jquery", "gitbook"], function($, gitbook) {
   /**
    * Closes all open modals and stops video playing in them
    */
@@ -21,20 +21,22 @@ require(["jquery"], function($) {
       closeModals();
     }
   });
-  /**
-   * Open modal on click on play button
-   */
-  $(".button.play").click(function (ev) {
-    var $modal;
+  gitbook.events.bind("page.change", function () {
+    /**
+     * Open modal on click on play button
+     */
+    $(".button.play").click(function (ev) {
+      var $modal;
 
-    ev.stopPropagation();
-    ev.preventDefault();
-    $(".modal").slideUp();
-    $modal = $(this).closest(".modal_parent").children(".modal");
-    $modal.slideDown();
+      ev.stopPropagation();
+      ev.preventDefault();
+      $(".modal").slideUp();
+      $modal = $(this).closest(".modal_parent").children(".modal");
+      $modal.slideDown();
+    });
+    /**
+     * Closes modals on click on close button
+     */
+    $(".modal .close").click(closeModals);
   });
-  /**
-   * Closes modals on click on close button
-   */
-  $(".modal .close").click(closeModals);
 });
