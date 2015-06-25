@@ -1,6 +1,7 @@
 {
   "name": "gitbook-plugin-modal-youtube-video",
-  "version": "1.0.6",
+  "main": "index.js",
+  "version": "1.0.7",
   "description": "Represent youtube videos inside a modal",
   "keywords": [
     "youtube",
