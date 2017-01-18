@@ -1,4 +1,7 @@
 Represent youtube videos inside a modal in your gittbook
+<p>
+  <a href="https://www.npmjs.com/package/gitbook-plugin-modal-youtube-video"><img src="https://img.shields.io/npm/dt/gitbook-plugin-modal-youtube-video.svg" alt="Downloads"></a>
+</p>
 ==============
 
 ![Link](screenshot1.png)
