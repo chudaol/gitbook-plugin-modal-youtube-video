@@ -16,7 +16,7 @@ Add plugin to your `book.json`, then run `gitbook install`:
 
 ```
 {
-    plugins: ["modal-youtube-video"]
+    "plugins": ["modal-youtube-video"]
 }
 ```
 
